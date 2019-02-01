@@ -1,0 +1,7 @@
+.sanity-sr, .sanity-sr-focus:not(:focus) {
+  position: absolute !important;
+  overflow: hidden !important;
+  width: 1px !important;
+  height: 1px !important;
+  clip: rect(0, 0, 0, 0) !important;
+}

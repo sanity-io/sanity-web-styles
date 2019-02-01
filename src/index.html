@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>sanity-web-styles</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <style>
+      #content {
+        max-width: var(--width-small);
+        box-sizing: border-box;
+        padding: var(--padding-medium);
+        margin: 0 auto;
+
+        @media (--media-min-small) {
+          padding: var(--padding-large);
+        }
+
+        @media (--media-min-medium) {
+          padding: var(--padding-x-large);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <h1 class="sanity-title1">sanity-web-styles</h1>
+      <p><code class="sanity-code">v1.0.0-alpha.0</code></p>
+      <div>
+        <h2 class="sanity-title2">Button</h2>
+        <p>Default button:</p>
+        <button class="sanity-button"><span>Push button</span></button>
+        <p>Large button:</p>
+        <button class="sanity-button sanity-button--large">
+          <span>Large push button</span>
+        </button>
+      </div>
+      <hr class="sanity-rule" />
+      <div>
+        <h2 class="sanity-title2">Code</h2>
+        <pre class="sanity-code">console.log('Hello, world!')</pre>
+      </div>
+      <hr class="sanity-rule" />
+      <div>
+        <h2 class="sanity-title2">Input</h2>
+        <input class="sanity-text-input" type="text" /> <br /><br />
+        <textarea class="sanity-text-input" rows="4"></textarea>
+      </div>
+      <hr class="sanity-rule" />
+      <div>
+        <h2 class="sanity-title2">Typography</h2>
+        <p class="sanity-title1">Title 1</p>
+        <p class="sanity-title2">Title 2</p>
+        <p class="sanity-title3">Title 3</p>
+        <p class="sanity-large">Large</p>
+        <p class="sanity-base">Base</p>
+        <p class="sanity-small">Small</p>
+        <p class="sanity-micro">Micro</p>
+      </div>
+    </div>
+  </body>
+</html>

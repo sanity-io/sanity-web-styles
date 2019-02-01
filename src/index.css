@@ -1,0 +1,16 @@
+/* NOTE: order is _VERY_ important */
+
+@import "./fonts.css";
+@import "./base.css";
+@import "./accessibility.css";
+@import "./button.css";
+@import "./code.css";
+@import "./input.css";
+@import "./typography.css";
+
+.sanity-rule {
+  height: 1px;
+  border: 0;
+  background: var(--color-shade3);
+  margin: var(--margin-medium) 0;
+}

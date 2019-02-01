@@ -1,0 +1,23 @@
+{
+  "modules": false,
+  "plugins": {
+    "postcss-import": {},
+    "postcss-preset-env": {
+      "importFrom": [
+        "src/custom-media.css",
+        "src/custom-properties.css"
+      ],
+      stage: 3,
+      "features": {
+        "color-mod-function": { "unresolved": "warn" },
+        "custom-media-queries": {
+          "preserve": false
+        },
+        "custom-properties": {
+          "preserve": false
+        },
+        "nesting-rules": true
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@import url('https://rsms.me/inter/inter.css');
+
+html {
+  font-family: var(--font-sans-serif);
+  font-size: calc(var(--unit) / 16 * 100%);
+  line-height: var(--font-base-line-height);
+  /* Mobile font size */
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: var(--font-sans-serif-variable);
+  }
+}
+
+body,
+img,
+svg,
+a,
+iframe {
+  margin: 0;
+  border: 0;
+  color: inherit;
+  fill: currentColor;
+}
+
+button,
+input,
+textarea,
+[contenteditable] {
+  /* Prevent ligatures */
+  font-feature-settings: "liga" 0;
+  text-rendering: optimizeSpeed;
+}
+
+button,
+a {
+  /* FastClick */
+  touch-action: manipulation;
+}

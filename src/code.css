@@ -1,0 +1,17 @@
+.sanity-code {
+  background: color-mod(var(--color-gray) alpha(5%));
+  font-family: var(--font-monospace);
+  font-size: var(--font-small-size);
+  line-height: var(--font-small-line-height);
+  border-radius: 4px;
+  overflow: auto;
+}
+
+pre.sanity-code {
+  padding: var(--padding-medium);
+  margin: var(--margin-small) 0;
+}
+
+code.sanity-code {
+  padding: calc(var(--padding-x-small) - 2px) var(--padding-x-small);
+}

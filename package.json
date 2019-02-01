@@ -1,0 +1,24 @@
+{
+  "name": "sanity-web-styles",
+  "version": "1.0.0-alpha.0",
+  "main": "package.json",
+  "style": "dist/sanity.css",
+  "scripts": {
+    "build": "npm run clean && npm run build-postcss && npm run build-images",
+    "build-images": "cpx \"src/**/*.{ico,png}\" dist/",
+    "build-postcss": "postcss src/index.css --output dist/sanity.css",
+    "clean": "rimraf .cache dist",
+    "dev": "npm run watch-postcss",
+    "prepublishOnly": "npm run build",
+    "watch-html": "parcel src/index.html",
+    "watch-postcss": "postcss src/index.css --output dist/sanity.css --watch"
+  },
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "parcel-bundler": "^1.11.0",
+    "postcss-cli": "^6.1.1",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.5.0",
+    "rimraf": "^2.6.3"
+  }
+}

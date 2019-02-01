@@ -1,0 +1,44 @@
+/* Reset Firefox */
+.sanity-button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.sanity-button {
+  -webkit-font-smoothing: inherit;
+  outline: none;
+  appearance: none;
+  border-radius: 4px;
+  background-color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  display: inline-flex;
+  color: var(--color-white);
+  font: inherit;
+  margin: 0;
+  padding: var(--padding-small) var(--padding-medium);
+  font-weight: 500;
+  box-sizing: border-box;
+  transition: background 200ms, border-color 200ms;
+
+  @media (hover: hover) {
+    @nest &:hover:not([disabled]) {
+      background: var(--color-black);
+      border-color: var(--color-black);
+    }
+  }
+
+  @nest &[disabled] {
+    opacity: 0.5;
+  }
+
+  @nest &.sanity-button--large {
+    font-size: var(--font-large-size);
+    line-height: var(--font-large-line-height);
+    border-radius: 6px;
+    padding: var(--padding-medium) var(--padding-large);
+  }
+}
+
+a.sanity-button {
+  text-decoration: none;
+}

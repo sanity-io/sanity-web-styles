@@ -1,0 +1,53 @@
+:root {
+  --color-black: #222;
+  --color-white: #fff;
+  --color-accent: #f04a39;
+  --color-focus: #24a3e3;
+  --color-gray: #697a90;
+  --color-shade1: rgba(0, 0, 0, 0.05);
+  --color-shade2: rgba(0, 0, 0, 0.1);
+  --color-shade3: rgba(0, 0, 0, 0.15);
+
+  /* Fonts */
+  --font-sans-serif: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, system-ui, sans-serif;
+  --font-sans-serif-variable: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, system-ui, sans-serif;
+  --font-monospace: "SF Mono", Menlo, Monaco, monospace;
+
+  /* Typography */
+  --unit: 16;
+  --font-micro-size: calc(10 / var(--unit) * 1rem); /* 10px */
+  --font-micro-line-height: 1; /* 10px */
+  --font-small-size: calc(14 / var(--unit) * 1rem); /* 14px */
+  --font-small-line-height: calc(18 / 14); /* 18px */
+  --font-base-size: 1em; /* 16px */
+  --font-base-line-height: calc(22 / var(--unit)); /* 24px */
+  --font-large-size: calc(18 / var(--unit) * 1rem); /* 18px */
+  --font-large-line-height: calc(26 / 18); /* 26px */
+  --font-title3-size: calc(24 / var(--unit) * 1rem); /* 24px */
+  --font-title3-line-height: calc(28 / 24); /* 28px */
+  --font-title2-size: calc(32 / var(--unit) * 1rem); /* 32px */
+  --font-title2-line-height: calc(36 / 32); /* 36px */
+  --font-title1-size: calc(44 / var(--unit) * 1rem); /* 44px */
+  --font-title1-line-height: calc(46 / 44); /* 46px */
+
+  /* Widths */
+  --width-x-small: 20em;
+  --width-small: 40em;
+  --width-medium: 60em;
+  --width-large: 80em;
+  --width-x-large: 100em;
+
+  /* Padding */
+  --padding-x-small: calc(4 / var(--unit) * 1rem);
+  --padding-small: calc(8 / var(--unit) * 1rem);
+  --padding-medium: calc(16 / var(--unit) * 1rem);
+  --padding-large: calc(24 / var(--unit) * 1rem);
+  --padding-x-large: calc(32 / var(--unit) * 1rem);
+
+  /* Margin */
+  --margin-x-small: calc(8 / var(--unit) * 1rem);
+  --margin-small: calc(16 / var(--unit) * 1rem);
+  --margin-medium: calc(32 / var(--unit) * 1rem);
+  --margin-large: calc(64 / var(--unit) * 1rem);
+  --margin-x-large: calc(128 / var(--unit) * 1rem);
+}

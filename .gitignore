@@ -1,0 +1,10 @@
+.DS_Store
+
+# Ignore parcel-bundle cache
+/.cache
+
+# Ignore distribution files
+/dist
+
+# Ignore Node.js modules
+/node_modules
