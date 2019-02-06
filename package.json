@@ -14,6 +14,11 @@
     "styles",
     "css"
   ],
+  "files": [
+    "dist/favicon.ico",
+    "dist/favicon.png",
+    "dist/sanity.css"
+  ],
   "main": "package.json",
   "style": "dist/sanity.css",
   "scripts": {
