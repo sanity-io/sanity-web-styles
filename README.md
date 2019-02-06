@@ -2,11 +2,13 @@
 
 Shared base styles, custom media and custom properties for web apps on Sanity.io.
 
-## Installation
-
 ```sh
 npm install sanity-io/sanity-web-styles
 ```
+
+[![npm version](https://img.shields.io/npm/v/sanity-web-styles.svg?style=flat-square)](https://www.npmjs.com/package/sanity-web-styles)
+
+## Usage
 
 To use the custom media and custom variables, configure your project using `.postcssrc`:
 
@@ -39,3 +41,7 @@ Import `dist/sanity.css` in your base CSS file:
 ```css
 @import "sanity-web-styles";
 ```
+
+## License
+
+MIT © [Sanity.io](https://www.sanity.io)
