@@ -1,6 +1,19 @@
 {
   "name": "sanity-web-styles",
   "version": "1.0.0-alpha.0",
+  "author": "Sanity.io <hello@sanity.io>",
+  "license": "MIT",
+  "repository": "https://github.com/sanity-io/sanity-web-styles",
+  "homepage": "https://github.com/sanity-io/sanity-web-styles#readme",
+  "bugs": {
+    "url": "https://github.com/sanity-io/sanity-web-styles/issues"
+  },
+  "keywords": [
+    "sanity.io",
+    "web",
+    "styles",
+    "css"
+  ],
   "main": "package.json",
   "style": "dist/sanity.css",
   "scripts": {
