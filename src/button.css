@@ -31,6 +31,13 @@
     opacity: 0.5;
   }
 
+  @nest &.sanity-button--small {
+    font-size: var(--font-small-size);
+    line-height: var(--font-small-line-height);
+    border-radius: 3px;
+    padding: var(--padding-x-small) var(--padding-small);
+  }
+
   @nest &.sanity-button--large {
     font-size: var(--font-large-size);
     line-height: var(--font-large-line-height);
