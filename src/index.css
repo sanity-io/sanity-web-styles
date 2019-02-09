@@ -1,11 +1,11 @@
 /* NOTE: order is _VERY_ important */
 
-@import "./fonts.css";
 @import "./base.css";
 @import "./accessibility.css";
 @import "./button.css";
 @import "./code.css";
 @import "./input.css";
+@import "./shadow.css";
 @import "./typography.css";
 
 .sanity-rule {
