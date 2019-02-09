@@ -8,6 +8,9 @@
   --color-shade2: rgba(0, 0, 0, 0.1);
   --color-shade3: rgba(0, 0, 0, 0.15);
 
+  /* Button */
+  --button-color: var(--color-black);
+
   /* State colors */
   --state-danger-color: #f43;
   --state-danger-color--inverted: #fff;
@@ -18,7 +21,7 @@
 
   /* Fonts */
   --font-sans-serif: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, system-ui, sans-serif;
-  --font-sans-serif-variable: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, system-ui, sans-serif;
+  --font-sans-serif-variable: 'Inter var', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, system-ui, sans-serif;
   --font-monospace: "SF Mono", Menlo, Monaco, monospace;
 
   /* Typography */
@@ -58,4 +61,10 @@
   --margin-medium: calc(32 / var(--unit) * 1rem);
   --margin-large: calc(64 / var(--unit) * 1rem);
   --margin-x-large: calc(128 / var(--unit) * 1rem);
+
+  /* Shadows */
+  --shadow-base: #000;
+  --shadow-color-umbra: color-mod(var(--shadow-base) a(5%));
+  --shadow-color-penumbra: color-mod(var(--shadow-base) a(8%));
+  --shadow-color-ambient: color-mod(var(--shadow-base) a(19%));
 }
