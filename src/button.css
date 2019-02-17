@@ -9,15 +9,14 @@
   text-align: center;
   outline: none;
   appearance: none;
+  background: none;
+  color: inherit;
+  border: 1px solid transparent;
   border-radius: 4px;
-  background-color: var(--button-color);
-  border: 1px solid var(--button-color);
   display: inline-flex;
-  color: var(--color-white);
   font: inherit;
   margin: 0;
   padding: var(--padding-small) var(--padding-medium);
-  font-weight: 500;
   box-sizing: border-box;
   transition: transform 200ms, background 200ms, border-color 200ms;
 
@@ -26,9 +25,43 @@
     margin: 0 auto;
   }
 
+  @nest &:not(.sanity-button--ghost) {
+    background-color: var(--button-color);
+    color: var(--color-white);
+
+    @nest &.sanity-button--red {
+      background-color: var(--color-red);
+    }
+
+    @nest &.sanity-button--green {
+      background-color: var(--color-green);
+    }
+
+    @nest &.sanity-button--blue {
+      background-color: var(--color-blue);
+    }
+  }
+
+  @nest &.sanity-button--ghost {
+    border-color: var(--color-shade2);
+
+    @nest &.sanity-button--red {
+      border-color: color-mod(var(--color-red) alpha(25%));
+    }
+
+    @nest &.sanity-button--green {
+      border-color: color-mod(var(--color-green) alpha(25%));
+    }
+
+    @nest &.sanity-button--blue {
+      border-color: color-mod(var(--color-blue) alpha(25%));
+    }
+  }
+
   @media (hover: hover) {
     @nest &:hover:not([disabled]) {
       transform: translate3d(0, -1px, 0);
+      color: var(--color-white);
       background: var(--color-black);
       border-color: var(--color-black);
     }
