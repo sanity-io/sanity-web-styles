@@ -8,12 +8,12 @@
   font-weight: 400;
   padding: var(--padding-small);
   border-radius: 2px;
-  box-sizing: border-box;
   width: 100%;
+  box-sizing: border-box;
   border: 1px solid transparent;
 
   @nest &:focus {
-    background: #fff;
+    background: var(--color-white);
     box-shadow: 0 0 0 3px color-mod(var(--color-focus) alpha(30%));
     border-color: var(--color-focus);
   }
@@ -33,4 +33,36 @@
 
 textarea.sanity-text-input {
   resize: none;
+}
+
+.sanity-checkbox-input {
+  outline: none;
+  appearance: none;
+  border-radius: 2px;
+  background: var(--color-shade1);
+  width: calc(var(--font-base-line-height) * 1rem);
+  height: calc(var(--font-base-line-height) * 1rem);
+  line-height: var(--font-base-line-height);
+  vertical-align: top;
+  margin: 0 var(--margin-x-small) 0 0;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font: inherit;
+  color: inherit;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+
+  @nest &:focus {
+    background: var(--color-white);
+    box-shadow: 0 0 0 3px color-mod(var(--color-focus) alpha(30%));
+    border-color: var(--color-focus);
+  }
+
+  @nest &:checked:before {
+    content: '✓';
+    font: inherit;
+    color: inherit;
+  }
 }
