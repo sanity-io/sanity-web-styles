@@ -1,19 +1,19 @@
 .sanity-title1 {
   font-size: var(--font-title1-size);
   line-height: var(--font-title1-line-height);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .sanity-title2 {
   font-size: var(--font-title2-size);
   line-height: var(--font-title2-line-height);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .sanity-title3 {
   font-size: var(--font-title3-size);
   line-height: var(--font-title3-line-height);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .sanity-large {
