@@ -1,29 +1,34 @@
 :root {
+  /* Brand colors */
+  --color-brand-primary: #f04a39;
+
+  /* Color palette */
   --color-black: #202123;
-  --color-white: #fff;
-  --color-red: #f04a39;
-  --color-green: #308654;
-  --color-yellow: #ffba00;
-  --color-blue: #156dff;
-  --color-cyan: #24a3e3;
   --color-gray: #697a90;
+  --color-light-gray: #b4bcc7;
+  --color-white: #fff;
+  --color-red: #e0322d;
+  --color-light-red: #f35f56;
+  --color-green: #308654;
+  --color-light-green: #56cc7e;
+  --color-yellow: #ffba00;
+  --color-light-yellow: #fce35f;
+  --color-blue: #156dff;
+  --color-light-blue: #54a8f6;
 
-  --color-accent: var(--color-red);
-  --color-focus: var(--color-cyan);
-  --color-shade1: rgba(0, 0, 0, 0.05);
-  --color-shade2: rgba(0, 0, 0, 0.1);
-  --color-shade3: rgba(0, 0, 0, 0.15);
+  /* Focus color */
+  --color-focus: var(--color-light-blue);
 
-  /* Button */
-  --button-color: var(--color-black);
+  /* Shade colors */
+  --color-shade1: color-mod(var(--color-black) alpha(5%));
+  --color-shade2: color-mod(var(--color-black) alpha(10%));
+  --color-shade3: color-mod(var(--color-black) alpha(15%));
 
-  /* State colors */
-  --state-danger-color: var(--color-red);
-  --state-danger-color--inverted: var(--color-white);
-  --state-success-color: var(--color-green);
-  --state-success-color--inverted: var(--color-white);
-  --state-warning-color: var(--color-yellow);
-  --state-warning-color--inverted: var(--color-black);
+  /* Shadow colors */
+  --color-shadow-base: var(--color-black);
+  --color-shadow-umbra: color-mod(var(--color-shadow-base) a(5%));
+  --color-shadow-penumbra: color-mod(var(--color-shadow-base) a(8%));
+  --color-shadow-ambient: color-mod(var(--color-shadow-base) a(19%));
 
   /* Fonts */
   --font-sans-serif: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, system-ui, sans-serif;
@@ -67,10 +72,4 @@
   --margin-medium: calc(32 / var(--unit) * 1rem);
   --margin-large: calc(64 / var(--unit) * 1rem);
   --margin-x-large: calc(128 / var(--unit) * 1rem);
-
-  /* Shadows */
-  --shadow-base: var(--color-black);
-  --shadow-color-umbra: color-mod(var(--shadow-base) a(5%));
-  --shadow-color-penumbra: color-mod(var(--shadow-base) a(8%));
-  --shadow-color-ambient: color-mod(var(--shadow-base) a(19%));
 }

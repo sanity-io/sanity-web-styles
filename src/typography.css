@@ -34,6 +34,7 @@
 .sanity-micro {
   font-size: var(--font-micro-size);
   line-height: var(--font-micro-line-height);
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }

@@ -26,7 +26,7 @@
   }
 
   @nest &:not(.sanity-button--ghost) {
-    background-color: var(--button-color);
+    background-color: var(--color-black);
     color: var(--color-white);
 
     @nest &.sanity-button--red {
@@ -43,18 +43,18 @@
   }
 
   @nest &.sanity-button--ghost {
-    border-color: var(--color-shade2);
+    border-color: var(--color-shade3);
 
     @nest &.sanity-button--red {
-      border-color: color-mod(var(--color-red) alpha(25%));
+      border-color: color-mod(var(--color-light-red) alpha(40%));
     }
 
     @nest &.sanity-button--green {
-      border-color: color-mod(var(--color-green) alpha(25%));
+      border-color: color-mod(var(--color-light-green) alpha(40%));
     }
 
     @nest &.sanity-button--blue {
-      border-color: color-mod(var(--color-blue) alpha(25%));
+      border-color: color-mod(var(--color-light-blue) alpha(40%));
     }
   }
 
