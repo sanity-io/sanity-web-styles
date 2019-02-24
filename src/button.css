@@ -89,6 +89,14 @@
     border-radius: 6px;
     padding: var(--padding-medium) var(--padding-large);
   }
+
+  @nest &:focus:not([disabled]) {
+    box-shadow: 0 0 0 3px color-mod(var(--color-focus) alpha(50%));
+
+    @nest &.sanity-button--ghost {
+      border-color: color-mod(var(--color-focus) alpha(50%));
+    }
+  }
 }
 
 a.sanity-button {

@@ -92,7 +92,7 @@
   <body>
     <div id="content">
       <h1 class="sanity-title1">sanity-web-styles</h1>
-      <p><code class="sanity-code">v1.0.0-alpha.0</code></p>
+      <p><code class="sanity-code" id="version">–</code></p>
 
       <hr class="sanity-rule" />
 
@@ -113,16 +113,31 @@
 
         <h3 class="sanity-title3">Colors</h3>
         <h4 class="sanity-micro" style="margin-top: 2rem;">Default buttons</h4>
-        <button class="sanity-button"><span>Label</span></button>
-        <button class="sanity-button sanity-button--blue">
-          <span>Label</span>
-        </button>
-        <button class="sanity-button sanity-button--green">
-          <span>Label</span>
-        </button>
-        <button class="sanity-button sanity-button--red">
-          <span>Label</span>
-        </button>
+        <div>
+          <button class="sanity-button"><span>Label</span></button>
+          <button class="sanity-button sanity-button--blue">
+            <span>Label</span>
+          </button>
+          <button class="sanity-button sanity-button--green">
+            <span>Label</span>
+          </button>
+          <button class="sanity-button sanity-button--red">
+            <span>Label</span>
+          </button>
+        </div>
+        <div style="margin-top: 0.5rem">
+          <button class="sanity-button" disabled><span>Label</span></button>
+          <button class="sanity-button sanity-button--blue" disabled>
+            <span>Label</span>
+          </button>
+          <button class="sanity-button sanity-button--green" disabled>
+            <span>Label</span>
+          </button>
+          <button class="sanity-button sanity-button--red" disabled>
+            <span>Label</span>
+          </button>
+        </div>
+
         <h4 class="sanity-micro" style="margin-top: 2rem;">Ghost buttons</h4>
         <button class="sanity-button sanity-button--ghost">
           <span>Label</span>
@@ -251,5 +266,7 @@
         <div class="shadow sanity-shadow-24dp">Depth 24</div>
       </div>
     </div>
+
+    <script src="./example.js"></script>
   </body>
 </html>
