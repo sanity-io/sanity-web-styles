@@ -44,4 +44,4 @@ Import `dist/sanity.css` in your base CSS file:
 
 ## License
 
-MIT © [Sanity.io](https://www.sanity.io)
+[MIT](LICENSE) © [Sanity.io](https://www.sanity.io)
