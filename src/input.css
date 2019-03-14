@@ -29,6 +29,17 @@
     line-height: var(--font-large-line-height);
     padding: var(--padding-medium);
   }
+
+  @nest &:invalid, &[data-invalid="true"] {
+    border-color: var(--color-red);
+    background: color-mod(var(--color-red) alpha(7%));
+
+    @nest &:focus {
+      background: var(--color-white);
+      box-shadow: 0 0 0 3px color-mod(var(--color-light-red) alpha(30%));
+      border-color: var(--color-red);
+    }
+  }
 }
 
 textarea.sanity-text-input {
