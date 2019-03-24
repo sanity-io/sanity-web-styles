@@ -10,11 +10,12 @@
   outline: none;
   appearance: none;
   background: none;
-  color: inherit;
+  color: var(--color-gray);
   border: 1px solid transparent;
   border-radius: 4px;
   display: inline-flex;
   font: inherit;
+  font-weight: 500;
   margin: 0;
   padding: var(--padding-small) var(--padding-medium);
   box-sizing: border-box;
@@ -26,7 +27,7 @@
   }
 
   @nest &:not(.sanity-button--ghost) {
-    background-color: var(--color-black);
+    background-color: var(--color-dark-gray);
     color: var(--color-white);
 
     @nest &.sanity-button--red {
@@ -40,30 +41,56 @@
     @nest &.sanity-button--blue {
       background-color: var(--color-blue);
     }
+
+    @media (hover: hover) {
+      @nest &:hover:not([disabled]) {
+        transform: translate3d(0, -1px, 0);
+        color: var(--color-white);
+        background: var(--color-black);
+        border-color: var(--color-black);
+      }
+    }
   }
 
   @nest &.sanity-button--ghost {
-    border-color: var(--color-shade3);
+    border-color: color-mod(var(--color-light-gray) alpha(50%));
+
+    @media (hover: hover) {
+      @nest &:hover:not([disabled]) {
+        transform: translate3d(0, -1px, 0);
+        color: var(--color-black);
+        border-color: var(--color-light-gray);
+      }
+    }
 
     @nest &.sanity-button--red {
-      border-color: color-mod(var(--color-light-red) alpha(40%));
+      border-color: color-mod(var(--color-light-red) alpha(50%));
+
+      @media (hover: hover) {
+        @nest &:hover:not([disabled]) {
+          border-color: var(--color-light-red);
+        }
+      }
     }
 
     @nest &.sanity-button--green {
-      border-color: color-mod(var(--color-light-green) alpha(40%));
+      border-color: color-mod(var(--color-light-green) alpha(50%));
+
+      @media (hover: hover) {
+        @nest &:hover:not([disabled]) {
+          border-color: var(--color-light-green);
+        }
+      }
     }
 
     @nest &.sanity-button--blue {
-      border-color: color-mod(var(--color-light-blue) alpha(40%));
-    }
-  }
+      border-color: color-mod(var(--color-light-blue) alpha(50%));
 
-  @media (hover: hover) {
-    @nest &:hover:not([disabled]) {
-      transform: translate3d(0, -1px, 0);
-      color: var(--color-white);
-      background: var(--color-black);
-      border-color: var(--color-black);
+      @media (hover: hover) {
+        @nest &:hover:not([disabled]) {
+          border-color: var(--color-light-blue);
+        }
+      }
     }
   }
 
