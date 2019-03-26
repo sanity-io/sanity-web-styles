@@ -3,7 +3,7 @@
   outline: none;
   appearance: none;
   border: none;
-  background: var(--color-shade1);
+  background: color-mod(var(--color-light-gray) alpha(20%));
   font: inherit;
   font-weight: 400;
   padding: var(--padding-small);
@@ -50,7 +50,7 @@ textarea.sanity-text-input {
   outline: none;
   appearance: none;
   border-radius: 2px;
-  background: var(--color-shade1);
+  background: color-mod(var(--color-light-gray) alpha(20%));
   width: calc(var(--font-base-line-height) * 1rem);
   height: calc(var(--font-base-line-height) * 1rem);
   line-height: var(--font-base-line-height);
