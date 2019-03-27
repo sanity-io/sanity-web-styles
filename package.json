@@ -1,5 +1,6 @@
 {
   "name": "sanity-web-styles",
+  "description": "Shared base styles, custom media and custom properties for web apps on Sanity.io.",
   "version": "1.0.0-alpha.11",
   "author": "Sanity.io <hello@sanity.io>",
   "license": "MIT",
@@ -37,6 +38,7 @@
     "postcss-cli": "^6.1.1",
     "postcss-import": "^12.0.1",
     "postcss-preset-env": "^6.5.0",
+    "posthtml-include": "^1.2.0",
     "rimraf": "^2.6.3"
   }
 }
