@@ -12,7 +12,9 @@
     "sanity.io",
     "web",
     "styles",
-    "css"
+    "css",
+    "bem",
+    "styleguide"
   ],
   "main": "package.json",
   "style": "dist/sanity.css",
