@@ -19,12 +19,13 @@
   "main": "package.json",
   "style": "dist/sanity.css",
   "scripts": {
-    "build": "npm run clean && npm run build-postcss && npm run build-images && npm run build-styleguide",
-    "build-images": "cpx \"src/**/*.{ico,png}\" dist/",
+    "build": "run-p build-*",
+    "build-images": "cpx \"src/assets/**/*.{ico,png}\" dist/assets/",
     "build-postcss": "postcss src/sanity.css --output dist/sanity.css",
     "build-styleguide": "parcel build src/styleguide/index.html --public-url '.' --out-dir docs",
-    "clean": "rimraf .cache dist docs",
-    "dev": "npm run watch-postcss",
+    "dev": "run-p watch-*",
+    "prebuild": "rimraf .cache dist docs",
+    "predev": "rimraf docs",
     "prepublishOnly": "npm run build",
     "watch-postcss": "postcss src/sanity.css --output dist/sanity.css --watch",
     "watch-styleguide": "parcel src/styleguide/index.html --out-dir docs"
