@@ -1,7 +1,7 @@
 {
   "name": "sanity-web-styles",
   "description": "Shared base styles, custom media and custom properties for web apps on Sanity.io.",
-  "version": "1.0.0-alpha.11",
+  "version": "1.0.0-alpha.12",
   "author": "Sanity.io <hello@sanity.io>",
   "license": "MIT",
   "repository": "https://github.com/sanity-io/sanity-web-styles",
