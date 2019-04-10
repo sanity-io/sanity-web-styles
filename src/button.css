@@ -18,7 +18,7 @@
   margin: 0;
   padding: var(--padding-small) var(--padding-medium);
   box-sizing: border-box;
-  transition: transform 200ms, background 200ms, border-color 200ms, color 200ms;
+  transition: background 200ms, border-color 200ms, color 200ms;
 
   @nest & > span {
     display: block;
@@ -43,7 +43,6 @@
 
     @media (hover: hover) {
       @nest &:hover:not([disabled]):not([data-disabled="true"]) {
-        /* transform: translate3d(0, -1px, 0); */
         color: var(--color-white);
         background: var(--color-black);
         border-color: var(--color-black);
@@ -57,7 +56,6 @@
 
     @media (hover: hover) {
       @nest &:hover:not([disabled]):not([data-disabled="true"]) {
-        /* transform: translate3d(0, -1px, 0); */
         color: var(--color-black);
         border-color: var(--color-light-gray);
       }
@@ -98,7 +96,7 @@
     cursor: default;
 
     @nest &:not(.sanity-button--ghost) {
-      background: var(--color-very-light-gray);
+      background: color-mod(var(--color-gray) alpha(20%));
     }
 
     @nest &.sanity-button--ghost {

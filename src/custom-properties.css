@@ -22,9 +22,9 @@
   --color-focus: var(--color-light-blue);
 
   /* Shade colors */
-  --color-shade1: color-mod(var(--color-black) alpha(5%));
-  --color-shade2: color-mod(var(--color-black) alpha(10%));
-  --color-shade3: color-mod(var(--color-black) alpha(15%));
+  --color-shade1: color-mod(var(--color-dark-gray) alpha(7%));
+  --color-shade2: color-mod(var(--color-dark-gray) alpha(12%));
+  --color-shade3: color-mod(var(--color-dark-gray) alpha(25%));
 
   /* Shadow colors */
   --color-shadow-base: var(--color-black);
